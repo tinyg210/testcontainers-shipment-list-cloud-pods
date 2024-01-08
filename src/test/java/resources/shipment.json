@@ -1,0 +1,25 @@
+{
+  "shipmentId": "dc3b6668-45ba-4c10-9860-95bbffaebfc1",
+  "recipient": {
+    "name": "Harry Potter",
+    "address": {
+      "postalCode": "LNDNGB",
+      "street": "Privet Drive",
+      "number": "4",
+      "city": "Little Whinging",
+      "additionalInfo": ""
+    }
+  },
+  "sender": {
+    "name": "Hermione Granger",
+    "address": {
+      "postalCode": "OXFGB",
+      "street": "Grimmauld Place",
+      "number": "12",
+      "city": "London",
+      "additionalInfo": ""
+    }
+  },
+  "weight": 1.0,
+  "imageLink": null
+}
