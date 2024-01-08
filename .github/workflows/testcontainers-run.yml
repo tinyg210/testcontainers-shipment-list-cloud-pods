@@ -35,6 +35,8 @@ jobs:
         run: sudo apt-get install -y maven
 
       - name: Run Workflow tests
+        env:
+          LOCALSTACK_AUTH_TOKEN: ${{ secrets.LOCALSTACK_AUTH_TOKEN }}
         run: |
           mvn test -Dtest=dev.ancaghenade.shipmentlistdemo.integrationtests.ShipmentServiceIntegration
 
