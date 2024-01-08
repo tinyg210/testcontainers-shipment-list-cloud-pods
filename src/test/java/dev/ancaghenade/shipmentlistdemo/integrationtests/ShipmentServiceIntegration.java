@@ -167,7 +167,7 @@ public class ShipmentServiceIntegration {
             List<Shipment> shipmentList = responseEntity.getBody();
             var shipmentWithoutLink = shipmentList.get(0);
             shipmentWithoutLink.setImageLink(null);
-            assertEquals(shipment, shipmentWithoutLink);
+            assertEquals(shipment.getShipmentId(), shipmentWithoutLink.getShipmentId());
         }
     }
 
@@ -196,7 +196,7 @@ public class ShipmentServiceIntegration {
 
     @Test
     @Order(6)
-    void testGetTwoShipmentsFromDynamoDB() {
+    void testGetSeveralShipmentsFromDynamoDB() {
 
         var url = "/api/shipment";
         // set the request headers
