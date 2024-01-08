@@ -36,7 +36,7 @@ jobs:
 
       - name: Run Workflow tests
         run: |
-          mvn test -Dtest=dev.ancaghenade.shipmentlistdemo.integrationtests.ShipmentServiceIntegrationTest
+          mvn test -Dtest=dev.ancaghenade.shipmentlistdemo.integrationtests.ShipmentServiceIntegration
 
       - name: Generate a Diagnostic Report
         if: failure()
