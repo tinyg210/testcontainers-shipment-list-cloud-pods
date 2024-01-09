@@ -44,7 +44,7 @@ public class ShipmentServiceIntegration {
 
     @Container
     protected static LocalStackContainer localStack =
-            new LocalStackContainer(DockerImageName.parse("localstack/localstack-pro:latest"))
+            new LocalStackContainer(DockerImageName.parse("localstack/localstack-pro:3.0.1"))
                     .withEnv("LOCALSTACK_AUTH_TOKEN", System.getenv("LOCALSTACK_AUTH_TOKEN"))
                     .withFileSystemBind("src/test/java/resources/shipment-list-demo-cloud-pod",
                             "/etc/localstack/init-pods.d/shipment-list-demo-cloud-pod")
